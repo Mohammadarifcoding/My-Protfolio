@@ -61,7 +61,7 @@ const AnimatedText = ({
         <motion.span
           key={index}
           className={cn(
-            "mr-1",
+            "mr-3 leading-tight",
             highlight && index % 3 === 0 ? "gradient-text font-bold" : ""
           )}
           variants={child}
