@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -66,8 +67,11 @@
   .gradient-text {
     @apply text-transparent bg-clip-text bg-gradient-to-r from-primary to-violet-500;
   }
-}
 
+}
+.style-text{
+  font-family: "Dancing Script", cursive;
+}
 /* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 8px;
@@ -113,6 +117,8 @@
 .glow:hover::after {
   opacity: 0.8;
 }
+
+
 
 /* Shimmer effect */
 .shimmer {

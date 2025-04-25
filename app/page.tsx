@@ -1,6 +1,7 @@
 "use client";
 
 import Header from "@/src/section/Header/Header";
+import Hero from "@/src/section/Hero/Hero";
 
 export default function Home() {
   // Sample work experience data
@@ -8,6 +9,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
+      <Hero/>
     </div>
   );
 }
