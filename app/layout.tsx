@@ -1,6 +1,8 @@
 import type React from "react"
 import "@/app/globals.css"
 import { Inter } from "next/font/google"
+import ThemeProvider from "@/src/shared/Theme/ThemeProvider"
+import ScrollProgress from "@/src/shared/Animation/ScrollProgress"
 
 
 const inter = Inter({ subsets: ["latin"] })
@@ -19,10 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="dark">
       <body className={inter.className}>
-        {/* <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
-          <ScrollProgress /> */}
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+          <ScrollProgress />
           {children}
-        {/* </ThemeProvider> */}
+        </ThemeProvider>
       </body>
     </html>
   )
