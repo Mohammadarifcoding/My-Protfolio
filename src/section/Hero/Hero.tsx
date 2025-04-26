@@ -121,16 +121,17 @@ const Hero = () => {
             }}
           >
             <div className="absolute inset-0 rounded-full bg-primary/20 animate-pulse z-0" />
-            <div className="relative w-32 h-32 mx-auto my-auto">
-              <div className="absolute inset-0 rounded-full overflow-hidden border-2 border-primary/30 glow z-10">
-                <Image
+            <div className="relative w-full h-full mx-auto my-auto">
+              {/* <div className="absolute inset-0 rounded-full overflow-hidden border-2 border-primary/30 glow z-10">
+                
+              </div> */}
+              <Image
                   src={profile}
                   alt="Mohammad Arif Picture"
                   fill
-                  className="object-cover rounded-full"
+                  className="object-contain rounded-full w-full h-full "
                   priority
                 />
-              </div>
             </div>
             <motion.div
               className="absolute -inset-1 rounded-full z-0"
