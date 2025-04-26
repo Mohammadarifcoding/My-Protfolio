@@ -8,9 +8,8 @@ import ScrollProgress from "@/src/shared/Animation/ScrollProgress"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Professional Portfolio",
+  title: "Mohammad Arif",
   description: "A showcase of my skills, projects, and experience",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({

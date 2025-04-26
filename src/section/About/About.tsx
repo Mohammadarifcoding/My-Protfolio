@@ -18,7 +18,7 @@ const About = () => {
 
         <div className="grid md:grid-cols-2 gap-8 items-center mt-8">
           <div className="flex flex-col gap-4">
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 sm:text-base text-sm">
               <p className="text-muted-foreground">
                 I love building web apps that solve real problems in simple
                 ways. My tech journey began at 2 years ago.I started my career by learning react js
@@ -37,14 +37,14 @@ const About = () => {
 
           <Card className="overflow-hidden border border-primary/20 bg-secondary/10">
             <CardContent className="p-6 space-y-4">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
                 {
                     AboutData.map((item)=>(
                         <div>
                   <h3 className="font-medium text-sm text-muted-foreground">
                     {item.name}
                   </h3>
-                  <p>{item.value}</p>
+                  <p className="sm:text-base text-sm">{item.value}</p>
                 </div>
                     ))
                 }
