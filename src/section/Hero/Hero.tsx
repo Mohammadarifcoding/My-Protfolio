@@ -37,13 +37,13 @@ const Hero = () => {
 
             <AnimatedText
               text="Building Impactful Software Leading with Vision"
-              className="text-4xl md:text-5xl lg:text-6xl font-bold leading-normal"
+              className="sm:text-4xl text-[27px] md:text-5xl lg:text-6xl font-bold md:leading-normal"
               delay={0.2}
               highlight={true}
             />
 
             <motion.p
-              className="text-xl text-muted-foreground"
+              className="md:text-xl sm:text-lg text-muted-foreground"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.8 }}
@@ -59,7 +59,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 1 }}
             >
-              <Button asChild className="relative overflow-hidden group">
+              <Button  asChild className="relative overflow-hidden group sm:h-10 sm:px-4 sm:py-2 h-9 rounded-md px-3">
                 <Link href="#projects">
                   <span className="relative z-10">View Projects</span>
                   <motion.span
@@ -68,13 +68,13 @@ const Hero = () => {
                     whileHover={{ x: "100%" }}
                     transition={{ duration: 0.5 }}
                   />
-                  <ArrowRight className="ml-2 h-4 w-4 relative z-10" />
+                  <ArrowRight className="sm:ml-2 ml-1 sm:h-4 h-3 sm:w-4 w-3 relative z-10" />
                 </Link>
               </Button>
               <Button
                 variant="outline"
                 asChild
-                className="border-primary/30 hover:bg-primary/10"
+                className="border-primary/30 hover:bg-primary/10 sm:h-10 sm:px-4 sm:py-2 h-9 rounded-md px-3"
               >
                 <Link href="/resume.pdf" target="_blank">
                   <Download className="mr-2 h-4 w-4" /> Download Resume
