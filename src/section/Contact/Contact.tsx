@@ -88,7 +88,7 @@ const Contact = () => {
 
             <div className="space-y-4">
               {socialLinks.map((social, idx) => (
-                <div className="flex items-start gap-3">
+                <div key={idx} className="flex items-start gap-3">
                   <div className="p-2 rounded-md bg-primary/10 text-primary mt-0.5">
                     <social.icon className="h-5 w-5" />
                   </div>

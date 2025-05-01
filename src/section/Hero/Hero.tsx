@@ -59,7 +59,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 1 }}
             >
-              <Button  asChild className="relative overflow-hidden group sm:h-10 sm:px-4 sm:py-2 h-9 rounded-md px-3">
+              <Button  className="relative overflow-hidden group sm:h-10 sm:px-4 sm:py-2 h-9 rounded-md px-3">
                 <Link href="#projects">
                   <span className="relative z-10">View Projects</span>
                   <motion.span
@@ -73,7 +73,7 @@ const Hero = () => {
               </Button>
               <Button
                 variant="outline"
-                asChild
+             
                 className="border-primary/30 hover:bg-primary/10 sm:h-10 sm:px-4 sm:py-2 h-9 rounded-md px-3"
               >
                 <Link href="/resume.pdf" target="_blank">
@@ -112,6 +112,7 @@ const Hero = () => {
                 socialLinks.map((link, index) => (
 
                    <motion.a
+                             key={index}
                               href={link.href} 
                               target="_blank"
                               rel="noopener noreferrer"

@@ -48,7 +48,7 @@ const Footer = () => {
               viewport={{ once: true }}
             >
               <Button
-                asChild
+                
                 className="group relative overflow-hidden px-6 py-6 text-base"
               >
                 <Link
@@ -73,8 +73,9 @@ const Footer = () => {
           {/* Navigation Links */}
           <div className="flex justify-center mb-12">
             <nav className="flex flex-wrap gap-8 justify-center">
-              {navItems.map((item) => (
+              {navItems.map((item,index) => (
                 <Link
+                key={index}
                   href={item.href}
                   className="text-sm hover:text-primary transition-colors"
                 >
@@ -94,6 +95,7 @@ const Footer = () => {
             <div className="flex items-center gap-4">
               {socialLinks.map((link, index) => (
                 <motion.a
+                key={index}
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"

@@ -30,7 +30,7 @@ const Header = () => {
 
         <div className="hidden md:flex items-center gap-2">
           <ThemeToggole />
-          <Button asChild size="sm" className="relative overflow-hidden group">
+          <Button  size="sm" className="relative overflow-hidden group">
             <Link href="#contact">
               <span className="relative z-10">Get in Touch</span>
               <motion.span

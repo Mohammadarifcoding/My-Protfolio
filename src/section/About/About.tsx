@@ -39,8 +39,8 @@ const About = () => {
             <CardContent className="p-6 space-y-4">
               <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
                 {
-                    AboutData.map((item)=>(
-                        <div>
+                    AboutData.map((item,idx)=>(
+                        <div key={idx}>
                   <h3 className="font-medium text-sm text-muted-foreground">
                     {item.name}
                   </h3>
