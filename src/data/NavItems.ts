@@ -9,7 +9,5 @@ export const navItems:TNavItems[] = [
     { name: "Skills", href: "#skills" },
     { name: "Experience", href: "#experience" },
     { name: "Projects", href: "#projects" },
-    { name: "Education", href: "#education" },
-    { name: "Community", href: "#community" },
     { name: "Contact", href: "#contact" },
   ]

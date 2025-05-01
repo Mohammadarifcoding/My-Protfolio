@@ -88,7 +88,7 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 1.2 }}
             >
-              {socialLinks.map((link, index) => {
+              {/* {socialLinks.map((link, index) => {
                 const Icon = link.icon; // Assuming socialLinks provides the icon component
                 return (
                   <Link
@@ -107,7 +107,24 @@ const Hero = () => {
                     </Button>
                   </Link>
                 );
-              })}
+              })} */}
+              {
+                socialLinks.map((link, index) => (
+
+                   <motion.a
+                              href={link.href} 
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-muted-foreground hover:text-primary transition-colors"
+                              whileHover={{ y: -3 }}
+                              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                            >
+                              <link.icon className="h-5 w-5" />
+                              <span className="sr-only">{link.label}</span>
+                            </motion.a>
+                ))
+              }
+                           
             </motion.div>
           </div>
 
