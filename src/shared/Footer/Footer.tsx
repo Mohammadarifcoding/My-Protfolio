@@ -11,7 +11,7 @@ import { socialLinks } from "@/src/data/SocialMedia";
 const Footer = () => {
   return (
     <Container>
-      <footer className="relative border-t border-primary/10  pt-16 overflow-hidden dot-pattern">
+      <footer className="relative border-t border-primary/10  pt-16 overflow-hidden ">
         {/* Dot pattern background */}
         <div className="absolute inset-0  opacity-20 pointer-events-none"></div>
 

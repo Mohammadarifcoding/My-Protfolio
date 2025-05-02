@@ -81,7 +81,7 @@ className="fixed top-0 left-0 h-full w-[85%] max-w-sm bg-[#09090B] shadow-lg bor
             </div>
 
             {/* body */}
-            <div className="flex-1 !h-full !bg-[#09090B]  h-screen py-6 px-4 space-y-8">
+            <div className="flex-1  !bg-[#09090B]  h-screen py-6 px-4 space-y-8">
               {/* profile card */}
               <div className="flex items-center gap-4 p-4 bg-primary/5 rounded-lg border border-primary/10">
                 <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-primary/20">

@@ -11,7 +11,7 @@ import { socialLinks } from "@/src/data/SocialMedia";
 const Contact = () => {
   return (
     <Container>
-      <AnimatedSection id="contact" className=" scroll-mt-20 dot-pattern">
+      <AnimatedSection id="contact" className="  scroll-pt-20  ">
         <SectionHeading
           badge="Get In Touch"
           title="Let's work together on your next project"

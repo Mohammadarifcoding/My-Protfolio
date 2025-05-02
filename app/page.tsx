@@ -11,7 +11,7 @@ export default function Home() {
   // Sample work experience data
 
   return (
-    <div className="min-h-screen bg-background ">
+    <div className="min-h-screen bg-background dot-pattern">
       <Header />
       <Hero/>
       <About/>

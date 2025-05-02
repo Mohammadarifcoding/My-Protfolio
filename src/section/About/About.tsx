@@ -8,7 +8,7 @@ import React from "react";
 const About = () => {
   return (
     <Container>
-      <AnimatedSection id="about" className=" scroll-mt-20 dot-pattern">
+       <AnimatedSection id="about" className="  scroll-pt-20  ">
         <SectionHeading
         className="sm:text-3xl text-[25px]"
           badge="About Me"
@@ -54,7 +54,7 @@ const About = () => {
             </CardContent>
           </Card>
         </div>
-      </AnimatedSection>
+      </AnimatedSection>  
     </Container>
   );
 };

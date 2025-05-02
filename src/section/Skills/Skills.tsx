@@ -8,7 +8,7 @@ import React from 'react';
 const Skills = () => {
     return (
         <Container>
-        <AnimatedSection id="skills" className=" scroll-mt-20 dot-pattern">
+        <AnimatedSection id="skills" className=" scroll-pt-20 ">
           <SectionHeading
           className="sm:text-3xl text-[25px]"
             badge="My Skills"

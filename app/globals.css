@@ -134,12 +134,12 @@
   background: hsl(var(--primary) / 0.8);
 }
 
-/* Dot pattern background */
 .dot-pattern {
-  background-size: 20px 20px;
-  background-image: radial-gradient(circle, hsl(var(--primary) / 0.15) 1px, transparent 1px);
+  background-size: 25px 25px;
+  background-image: 
+    linear-gradient(to right, hsl(var(--primary) / 0.10) 1px, transparent 1px),
+    linear-gradient(to bottom, hsl(var(--primary) / 0.10) 1px, transparent 1px);
 }
-
 /* Glow effects */
 .glow {
   position: relative;
