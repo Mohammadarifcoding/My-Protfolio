@@ -21,7 +21,7 @@ import { Badge } from "@/src/components/ui/badge";
 
 const Hero = () => {
   return (
-    <Container>
+    <Container className="px-4 md:px-8 lg:px-12">
       <AnimatedSection className="relative">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-16">
           <div className="flex flex-col md:gap-y-6 gap-y-4 max-w-xl">
@@ -48,9 +48,9 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.8 }}
             >
-              I lead Khulna Polytechnic programming club, build web apps with
-              React and Node.js, create open-source UI tools, and mentor fellow
-              developers.
+              Full-stack developer & club leader building impactful web apps
+              with React & Node.js, crafting open-source UI tools, and guiding
+              aspiring devs.
             </motion.p>
 
             <motion.div
@@ -59,9 +59,11 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 1 }}
             >
-              <Button  className="relative overflow-hidden group sm:h-10 sm:px-4 sm:py-2 h-9 rounded-md px-3">
-                <Link href="#projects">
-                  <span className="relative z-10">View Projects</span>
+              <Button className="relative overflow-hidden group sm:h-10 sm:px-4 sm:py-2 h-9 rounded-md px-3">
+                <Link href="#projects" className="flex  items-center">
+                  <span className="relative z-10 font-semibold tracking-wide">
+                    Explore Projects
+                  </span>
                   <motion.span
                     className="absolute inset-0 bg-white/10"
                     initial={{ x: "-100%" }}
@@ -73,11 +75,14 @@ const Hero = () => {
               </Button>
               <Button
                 variant="outline"
-             
                 className="border-primary/30 hover:bg-primary/10 sm:h-10 sm:px-4 sm:py-2 h-9 rounded-md px-3"
               >
-                <Link href="/resume.pdf" target="_blank">
-                  <Download className="mr-2 h-4 w-4" /> Download Resume
+                <Link
+                  href="/resume.pdf"
+                  target="_blank"
+                  className="flex items-center font-medium"
+                >
+                  <Download className="mr-2 h-4 w-4" /> Resume PDF
                 </Link>
               </Button>
             </motion.div>
@@ -88,44 +93,20 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 1.2 }}
             >
-              {/* {socialLinks.map((link, index) => {
-                const Icon = link.icon; // Assuming socialLinks provides the icon component
-                return (
-                  <Link
-                    key={index}
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button
-                      variant="ghost"
-                      size="icon"
-                      className="hover:bg-primary/10 hover:text-primary"
-                    >
-                      <Icon className="h-5 w-5" />
-                      <span className="sr-only">{link.label}</span>
-                    </Button>
-                  </Link>
-                );
-              })} */}
-              {
-                socialLinks.map((link, index) => (
-
-                   <motion.a
-                             key={index}
-                              href={link.href} 
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-muted-foreground hover:text-primary transition-colors"
-                              whileHover={{ y: -3 }}
-                              transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                            >
-                              <link.icon className="h-5 w-5" />
-                              <span className="sr-only">{link.label}</span>
-                            </motion.a>
-                ))
-              }
-                           
+              {socialLinks.map((link, index) => (
+                <motion.a
+                  key={index}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors hover:drop-shadow-md"
+                  whileHover={{ y: -3 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                  title={link.label} // Tooltip
+                >
+                  <link.icon className="h-5 w-5" />
+                </motion.a>
+              ))}
             </motion.div>
           </div>
 
@@ -140,16 +121,14 @@ const Hero = () => {
           >
             <div className="absolute inset-0 rounded-full bg-primary/20 animate-pulse z-0" />
             <div className="relative w-full h-full mx-auto my-auto">
-              {/* <div className="absolute inset-0 rounded-full overflow-hidden border-2 border-primary/30 glow z-10">
-                
-              </div> */}
+              <div className="absolute inset-0 rounded-full border-2 border-primary/30 shadow-[0_0_30px_rgba(109,40,217,0.2)] z-10" />
               <Image
-                  src={profile}
-                  alt="Mohammad Arif Picture"
-                  fill
-                  className="object-contain rounded-full w-full h-full "
-                  priority
-                />
+                src={profile}
+                alt="Mohammad Arif Picture"
+                fill
+                className="object-contain rounded-full w-full h-full "
+                priority
+              />
             </div>
             <motion.div
               className="absolute -inset-1 rounded-full z-0"
